@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio de aprendizaje</title>
+
+    <!-- Ícono de la pestaña del navegador -->
+    <link rel="icon" href="img/mundito.ico" type="image/x-icon">
+
+    <!-- Librería externa para usar íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos compartidos del sitio -->
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- Estilos propios de esta página -->
+    <link rel="stylesheet" href="css/portafolio.css">
+</head>
+
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Portafolio de aprendizaje</h1>
+        <p>Trayectoria en Fundamentos de Desarrollo Web &mdash; HTML y CSS</p>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav>
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="#intro-portafolio">Sobre el portafolio</a>
+
+        <a href="#habilidades">Habilidades</a>
+
+        <a href="#tabla-progreso">Progreso</a>
+
+        <a href="#proyecto-destacado">Proyecto</a>
+
+        <a href="pages/buscar.html">Buscar</a>
+
+        <a href="pages/cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+
+    <main>
+
+        <section id="intro-portafolio">
+            <h2>Sobre este portafolio</h2>
+
+            <p>
+                Esta página documenta mi trayectoria de aprendizaje en el área de
+                Desarrollo Web. A través de la materia de
+                Fundamentos de Desarrollo Web en la ESPE, he ido adquiriendo
+                conocimientos sobre estructura HTML, estilos con CSS, semántica web y
+                organización de proyectos.
+            </p>
+
+            <p>
+                El objetivo de este portafolio es reunir en un solo lugar las habilidades
+                desarrolladas, los conceptos aprendidos y el proyecto práctico realizado
+                durante el semestre.
+            </p>
+
+            <p class="nota">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Materia: Fundamentos de Desarrollo Web.
+                Facultad de Ciencias Ambientales, ESPE - 2026
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades adquiridas</h2>
+
+            <div class="grid-tarjetas">
+
+                <article class="tarjeta-habilidad">
+                    <figure>
+                        <img src="img/portafolio/html.svg" alt="Logo de HTML5">
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+
+                    <h3>HTML Semántico</h3>
+
+                    <p>
+                        Uso de etiquetas semánticas como
+                        <code>header</code>, <code>nav</code>,
+                        <code>main</code>, <code>section</code>,
+                        <code>article</code> y <code>footer</code>
+                        para organizar el contenido de forma clara y accesible.
+                    </p>
+
+                </article>
+
+                <article class="tarjeta-habilidad">
+                    <figure>
+                        <img src="img/portafolio/css.svg" alt="Logo de CSS3">
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+
+                    <h3>Hojas de estilo CSS</h3>
+
+                    <p>
+                        Aplicación de selectores de etiqueta, clase e ID. Uso de
+                        propiedades de color, tipografía, espaciado, bordes y
+                        diseño con <code>flexbox</code> y <code>grid</code>.
+                        Estilos en archivos externos por página.
+                    </p>
+
+                </article>
+
+                <article class="tarjeta-habilidad">
+                    <figure>
+                        <img src="img/portafolio/proyecto.svg" alt="Ícono de proyecto web">
+                        <figcaption>Proyecto web</figcaption>
+                    </figure>
+
+                    <h3>Proyecto integrador</h3>
+
+                    <p>
+                        Construcción de un sitio web con múltiples páginas enlazadas,
+                        rutas relativas, carpetas organizadas, formularios funcionales,
+                        multimedia y diseño visual coherente.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Institución educativa</h2>
+
+            <figure>
+                <img src="img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE" width="280">
+                <figcaption>
+                    Universidad de las Fuerzas Armadas ESPE - Sede donde curso Fundamentos de Desarrollo Web.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="tabla-progreso">
+            <h2>Tabla de progreso y habilidades</h2>
+
+            <table>
+                <caption>Resultados de aprendizaje</caption>
+
+                <thead>
+                    <tr>
+                        <th>Tema</th>
+                        <th>Descripción</th>
+                        <th>Progreso</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><strong>Estructura HTML</strong></td>
+                        <td>Etiquetas básicas, jerarquía de encabezados y atributos.</td>
+                        <td>
+                            <div class="barra-progreso">
+                                <span style="width: 90%;"></span>
+                            </div>
+                            90%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>HTML Semántico</strong></td>
+                        <td>Etiquetas semánticas: header, nav, main, section, article, footer.</td>
+                        <td>
+                            <div class="barra-progreso">
+                                <span style="width: 85%;"></span>
+                            </div>
+                            85%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Formularios HTML</strong></td>
+                        <td>Inputs, selects, checkboxes, radios, validaciones y envío.</td>
+                        <td>
+                            <div class="barra-progreso media">
+                                <span style="width: 70%;"></span>
+                            </div>
+                            70%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CSS Básico</strong></td>
+                        <td>Selectores, propiedades de color, fuente, espaciado y bordes.</td>
+                        <td>
+                            <div class="barra-progreso media">
+                                <span style="width: 75%;"></span>
+                            </div>
+                            75%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CSS Flexbox</strong></td>
+                        <td>Diseño en fila y columna con justify-content y align-items.</td>
+                        <td>
+                            <div class="barra-progreso baja">
+                                <span style="width: 55%;"></span>
+                            </div>
+                            55%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CSS Grid</strong></td>
+                        <td>Cuadrículas con grid-template-columns y áreas de cuadrícula.</td>
+                        <td>
+                            <div class="barra-progreso baja">
+                                <span style="width: 40%;"></span>
+                            </div>
+                            40%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Responsive Design</strong></td>
+                        <td>Media queries para adaptar el diseño a distintos tamaños.</td>
+                        <td>
+                            <div class="barra-progreso baja">
+                                <span style="width: 30%;"></span>
+                            </div>
+                            30%
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de proyecto destacado -->
+        <section id="proyecto-destacado">
+            <h2>Proyecto integrador del semestre</h2>
+
+            <p>
+                Como parte de la materia se desarrolló el proyecto PracticaCSS,
+                un sitio web de práctica que integra los conceptos de HTML semántico y CSS vistos
+                en clase.
+            </p>
+
+            <article>
+                <h3>
+                    PracticaCSS - Sitio web de práctica
+                </h3>
+
+                <p>
+                    El proyecto consiste en un sitio web con varias páginas enlazadas entre sí,
+                    organizadas con rutas relativas y carpetas separadas para imágenes, audio,
+                    video, páginas internas y archivos CSS.
+                </p>
+
+                <p class="nota">
+                    <i class="fa-solid fa-folder-open"></i>
+                    Estructura del proyecto: <code>index.html</code>, carpetas
+                    <code>css/</code>, <code>img/</code>, <code>pages/</code>,
+                    <code>audio/</code> y <code>video/</code>.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Próximos pasos</h2>
+
+            <p>
+                A partir de lo aprendido en esta materia, los siguientes objetivos de
+                aprendizaje son:
+            </p>
+
+            <details>
+                <summary>Profundizar en CSS avanzado</summary>
+                <p>
+                    Aprender animaciones CSS, variables (<code>:root</code>),
+                    pseudo-elementos (<code>::before</code>, <code>::after</code>)
+                    y diseño responsive completo con media queries.
+                </p>
+            </details>
+
+            <details>
+                <summary>Introducción a JavaScript</summary>
+                <p>
+                    Añadir interactividad a las páginas web: validaciones del lado
+                    del cliente, manipulación del DOM y consumo de APIs básicas.
+                </p>
+            </details>
+
+            <details>
+                <summary>Publicar en internet</summary>
+                <p>
+                    Utilizar servicios como GitHub Pages o Netlify para publicar
+                    proyectos web de forma gratuita y compartir el portafolio con otros.
+                </p>
+            </details>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2026 Geovanny Brito Casanova.</p>
+        <p>Portafolio de aprendizaje - Fundamentos de Desarrollo Web.</p>
+
+        <address>
+            Ecuador - Universidad de las Fuerzas Armadas ESPE<br>
+            Contacto académico: kmlee@espe.edu.ec
+        </address>
+    </footer>
+
+</body>
+
+</html>

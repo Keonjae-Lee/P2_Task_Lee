@@ -1,0 +1,232 @@
+/* ============================================================
+   portafolio.css
+   Estilos propios de portafolio.html.
+   Se carga después de general.css para complementar los
+   estilos compartidos del sitio PracticaCSS.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: SECCIÓN INTRODUCTORIA
+   Sección de bienvenida del portafolio, identificada con ID.
+   El selector de ID usa #.
+   ============================================================ */
+
+#intro-portafolio {
+    background-color: #f7fff4;
+    border-left: 8px solid #1b7505;
+}
+
+#intro-portafolio h2 {
+    font-size: 22px;
+}
+
+
+/* ============================================================
+   BLOQUE 2: CUADRÍCULA DE TARJETAS
+   Clase que convierte un section en contenedor de tarjetas
+   usando CSS Grid. Las tarjetas se acomodan en columnas iguales.
+   ============================================================ */
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+
+/* ============================================================
+   BLOQUE 3: TARJETA DE HABILIDAD
+   Clase reutilizable para cada article dentro de .grid-tarjetas.
+   ============================================================ */
+
+.tarjeta-habilidad {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-habilidad:hover {
+    border-color: #1b7505;
+    box-shadow: 0 4px 12px rgba(27, 117, 5, 0.15);
+}
+
+.tarjeta-habilidad h3 {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.tarjeta-habilidad p {
+    font-size: 15px;
+    color: #555555;
+    text-align: center;
+}
+
+
+/* ============================================================
+   BLOQUE 4: FIGURA DENTRO DE TARJETA
+   Centra la imagen y le da un fondo suave dentro de la tarjeta.
+   ============================================================ */
+
+.tarjeta-habilidad figure {
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.tarjeta-habilidad figure img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+}
+
+
+/* ============================================================
+   BLOQUE 5: ETIQUETA DE NIVEL
+   Clase para mostrar el nivel de dominio de cada habilidad.
+   Se usa dentro de las tarjetas con class="nivel-tag".
+   ============================================================ */
+
+.nivel-tag {
+    display: inline-block;
+    background-color: #dba112;
+    color: #0d1910;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.nivel-tag.avanzado {
+    background-color: #1b7505;
+    color: white;
+}
+
+.nivel-tag.basico {
+    background-color: #f4f6f8;
+    color: #555555;
+    border: 1px solid #cccccc;
+}
+
+
+/* ============================================================
+   BLOQUE 6: SECCIÓN DE TABLA DE PROGRESO
+   ID para la sección que contiene la tabla de habilidades.
+   ============================================================ */
+
+#tabla-progreso {
+    border-left: 6px solid #dba112;
+}
+
+#tabla-progreso h2 {
+    margin-bottom: 16px;
+}
+
+
+/* ============================================================
+   BLOQUE 7: BARRA DE PROGRESO EN TABLA
+   Las barras dentro de la tabla usan clases para colorear
+   según el nivel de avance.
+   ============================================================ */
+
+.barra-progreso {
+    width: 100%;
+    height: 18px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.barra-progreso span {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #1b7505;
+}
+
+.barra-progreso.media span {
+    background-color: #dba112;
+}
+
+.barra-progreso.baja span {
+    background-color: #a8a8a7;
+}
+
+
+/* ============================================================
+   BLOQUE 8: SECCIÓN DE PROYECTO DESTACADO
+   ID para el bloque de proyecto personal integrado.
+   ============================================================ */
+
+#proyecto-destacado {
+    background-color: #fff8e6;
+    border: 2px solid #dba112;
+}
+
+#proyecto-destacado h2 {
+    color: #0d1910;
+    border-bottom-color: #1b7505;
+}
+
+#proyecto-destacado .etiqueta-proyecto {
+    display: inline-block;
+    background-color: #0d1910;
+    color: white;
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+
+/* ============================================================
+   BLOQUE 9: CLASE DE TEXTO DE APOYO (nota)
+   Igual a la de index.css para mantener coherencia visual.
+   ============================================================ */
+
+.nota {
+    background-color: #fff8e6;
+    border-left: 5px solid #dba112;
+    padding: 12px;
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   BLOQUE 10: ESPACIADO GENERAL DE SECCIONES EN MAIN
+   ============================================================ */
+
+main section {
+    margin-bottom: 24px;
+}
+
+
+/* ============================================================
+   BLOQUE 11: RESPONSIVE PARA CUADRÍCULA DE TARJETAS
+   En pantallas pequeñas las tarjetas pasan a una sola columna.
+   ============================================================ */
+
+@media (max-width: 700px) {
+    .grid-tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .grid-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
