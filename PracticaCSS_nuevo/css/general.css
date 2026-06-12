@@ -1,4 +1,4 @@
-/* ============================================================
+S/* ============================================================
    general.css
    Archivo CSS general para TODAS las páginas del sitio.
    Aquí se colocan estilos compartidos: reinicio básico, etiquetas,
@@ -161,6 +161,7 @@ main {
 section,
 article,
 aside {
+    
     background-color: white;
     padding: 20px;
     margin-bottom: 18px;
@@ -197,8 +198,8 @@ aside i {
 img,
 video,
 iframe {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 80%;
+    border-radius: 15px;
 }
 
 figure {
@@ -444,13 +445,13 @@ kbd {
     /* Selecciona el menú de navegación */
     nav {
         /* Coloca los elementos del menú uno debajo del otro */
-        flex-direction: column;
+        flex-direction:row;
     }
 
     /* Selecciona cada enlace dentro del menú */
     nav a {
         /* Hace que cada enlace ocupe todo el ancho disponible */
-        width: 100%;
+        width: 20%;
 
         /* Centra el texto dentro de cada enlace */
         text-align: center;
